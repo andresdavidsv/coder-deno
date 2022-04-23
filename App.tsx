@@ -9,7 +9,6 @@ const App = () => {
     setState(e.target);
   };
 
-  console.log('User:', state);
   return (
     <div style={{ backgroundColor: 'black' }}>
       <h1 style={{ backgroundColor: 'white' }}>Proyecto en Deno</h1>

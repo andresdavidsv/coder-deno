@@ -19,7 +19,7 @@ declare global {
     }
   }
 }
-
+let colors: string[] = [];
 const App = () => {
   const [color, setColor] = React.useState(0);
   return (
@@ -29,6 +29,7 @@ const App = () => {
         style={{ backgroundColor: 'white' }}
         onChange={(e: any) => setColor(e.target.value)}
       />
+      {colors.push(state as string)}
       <ul>
         {color.forEach((c: any) => {
           <li style={{ backgroundColor: 'white' }}>{c}</li>;
